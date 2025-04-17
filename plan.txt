@@ -1,0 +1,17 @@
+plan for curson for phone is to follow the pattern of hugging face agents course
+points of thinking right now:
+	1. when app name gets referenced there will be a check if they exist in the installed app command if so then we extract the app logo image from it , if asked to open app then auto start via cmdline or if need is to do manipally we start a countinous running process that will sqipe intil it is seen and  afailsafe will activate if a lot of time is takn
+	2. https://www.repeato.app/extracting-layout-and-view-information-via-adb/#:~:text=Using%20ADB%20to%20Dump%20UI,about%20the%20layout%20and%20views. ::: uiautomator dump will be used to analyze current app screen if it matches with current textual info ex-use-case:: find the blue colored home button from the homescreen then the tool with run adb shell uiautomator dump and analyze the text which component contains what and where is it on the screen
+	3. if its a screenshot by screenshot instruction then al detectable indivisual component will be identified we will have internal highlight tools where you can run over app and the temp image gets stained representing an action hkaaction now all thses actions are analysed as action keys now the indiisual component are extracted and saved accordinly with context based on input prompt, whenever a new component on screen comes up we prompt Smolvlm to give context on the image on screen also run a image to text maker
+	4. need to use vector db and langchains and a model with a bigger context
+	5. an unsuperised agent would be better which can be trained with edge cases and modify thus wouldn't have to write new things agn and agn
+	6. mains tools: 
+			1. screen analyser = analyze xml screen text
+			2. screenshotter() = for general state info special case is screenshotter can be configured to whole screen or specific  coordinates
+			3. movement() = has its own internal commands sort of regex like to understand how far to move
+			4. image analyser() = both textual info and conext of image
+			5. state aanalyser() = analyzes distance between two object on screen
+			6. datagreper() = specific system data from collected help query about the specified device that device that user is using , saved screenshots about the device with context to understand image
+		
+
+to start simple flag 1 is to be able to detext clicable objects based on screen xml and textual info and click and interact when specifically asked
