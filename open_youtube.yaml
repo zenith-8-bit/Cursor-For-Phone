@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────
+# scripts/open_youtube_search.yaml
+#
+# Opens YouTube and searches for a video.
+# Run: python agent.py scripts/open_youtube_search.yaml
+# ─────────────────────────────────────────────
+
+name: "YouTube Search"
+config:
+  model: "claude-haiku-4-5-20251001"
+  max_retries: 3
+  default_wait: 2.0
+
+steps:
+  - do: "press the Home button to go to the home screen"
+    wait: 1.5
+
+  - do: "find and tap the YouTube app icon"
+    wait: 3.0
+
+  - do: "tap the search icon or search bar at the top"
+    wait: 1.5
+
+  - do: "type 'lofi hip hop radio' into the search field"
+    wait: 1.5
+
+  - do: "tap the search button or press Enter to search"
+    wait: 2.5
+
+  - do: "tap the first video result in the list"
+    wait: 3.0
