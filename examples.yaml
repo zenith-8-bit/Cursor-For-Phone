@@ -1,0 +1,84 @@
+# ─────────────────────────────────────────────
+# scripts/send_whatsapp.yaml
+#
+# Opens WhatsApp and sends a message to a contact.
+# ─────────────────────────────────────────────
+
+name: "Send WhatsApp Message"
+config:
+  model: "claude-haiku-4-5-20251001"
+  max_retries: 3
+  default_wait: 2.0
+
+steps:
+  - do: "press the Home button"
+    wait: 1.0
+
+  - do: "open the WhatsApp app"
+    wait: 3.0
+
+  - do: "tap the search icon to search for a contact"
+    wait: 1.5
+
+  - do: "type 'Mom' in the contact search field"
+    wait: 1.5
+
+  - do: "tap the contact named Mom in the results"
+    wait: 2.0
+
+  - do: "tap the message input field at the bottom of the screen"
+    wait: 1.0
+
+  - do: "type 'On my way home, be there in 20 mins'"
+    wait: 1.0
+
+  - do: "tap the send button (arrow icon on the right of the message field)"
+    wait: 1.5
+
+---
+# ─────────────────────────────────────────────
+# scripts/wifi_toggle.yaml
+#
+# Toggles WiFi off and back on via Settings.
+# ─────────────────────────────────────────────
+
+name: "Toggle WiFi"
+config:
+  max_retries: 2
+  default_wait: 1.5
+
+steps:
+  - do: "press the Home button"
+    wait: 1.0
+
+  - do: "open the Settings app"
+    wait: 2.0
+
+  - do: "tap on Connections or WiFi in the settings list"
+    wait: 2.0
+
+  - do: "tap the WiFi toggle switch to turn it off"
+    wait: 2.0
+
+  - do: "tap the WiFi toggle switch again to turn it back on"
+    wait: 3.0
+
+---
+# ─────────────────────────────────────────────
+# scripts/circle_to_search.yaml
+#
+# Uses Samsung's Circle to Search feature.
+# Long-press Home → draw circle → search.
+# ─────────────────────────────────────────────
+
+name: "Circle to Search"
+config:
+  max_retries: 2
+  default_wait: 2.0
+
+steps:
+  - do: "long press the Home button to activate Circle to Search"
+    wait: 2.5
+
+  - do: "tap or circle around the main content area to search it"
+    wait: 3.0
