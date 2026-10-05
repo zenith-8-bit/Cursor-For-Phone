@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mobile Cursor</string>
+    <string name="accessibility_description">Lets Mobile Cursor inspect and operate the phone UI through Android accessibility semantics.</string>
+</resources>

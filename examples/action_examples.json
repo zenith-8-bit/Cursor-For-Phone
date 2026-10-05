@@ -1,0 +1,20 @@
+{
+  "safe_actions": [
+    {"name":"HOME"},
+    {"name":"BACK"},
+    {"name":"TAP","x":500,"y":900},
+    {"name":"TYPE_TEXT","text":"hello world"},
+    {"name":"SCROLL","direction":"DOWN"},
+    {"name":"OPEN_APP","package":"com.android.chrome"}
+  ],
+  "semantic_future_actions": [
+    {"name":"CLICK_ELEMENT","target":"Search"}
+  ],
+  "risky_actions": [
+    {"name":"SEND_MESSAGE"},
+    {"name":"CALL"},
+    {"name":"PURCHASE"},
+    {"name":"DELETE"},
+    {"name":"POST"}
+  ]
+}

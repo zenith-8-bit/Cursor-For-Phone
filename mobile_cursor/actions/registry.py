@@ -1,0 +1,23 @@
+ACTION_DESCRIPTIONS = {
+    "HOME": "Go to Android home screen.",
+    "BACK": "Press Android back.",
+    "RECENTS": "Open Android recent apps.",
+    "WAIT": "Wait briefly.",
+    "TAP": "Tap a target or coordinate.",
+    "LONG_PRESS": "Long press a target or coordinate.",
+    "SWIPE": "Swipe.",
+    "TYPE_TEXT": "Type into focused field.",
+    "KEY_PRESS": "Send keyboard key.",
+    "OPEN_APP": "Launch an Android package.",
+    "CLEAR_TEXT": "Clear focused text.",
+    "CLICK_ELEMENT": "Click a semantic element.",
+    "SCROLL": "Scroll.",
+    "GET_SCREEN": "Observe again.",
+    "STOP": "Finish task.",
+    "ASK_USER": "Ask user.",
+    "SEND_MESSAGE": "Send message; confirmation required.",
+    "CALL": "Call; confirmation required.",
+    "DELETE": "Delete; confirmation required.",
+    "PURCHASE": "Purchase; confirmation required.",
+    "POST": "Publish; confirmation required."
+}
